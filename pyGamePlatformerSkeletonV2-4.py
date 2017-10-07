@@ -8,6 +8,7 @@
 # Import external functionality
 import pygame, sys
 
+# plays music
 pygame.init()
 pygame.mixer.init() 
 menu_song = pygame.mixer.music.load("menu.ogg")
