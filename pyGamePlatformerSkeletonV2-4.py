@@ -8,6 +8,11 @@
 # Import external functionality
 import pygame, sys
 
+pygame.init()
+pygame.mixer.init() 
+menu_song = pygame.mixer.music.load("menu.ogg")
+pygame.mixer.music.play(-1)
+
 # Setup global constants
 BLACK = (0,0,0)
 WHITE = (255,255,255)
