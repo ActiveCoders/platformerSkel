@@ -63,6 +63,10 @@ class Player(pygame.sprite.Sprite):
         if "LEFT" in gameKeysPressed:
             self.rect.x = self.rect.x - 1
             #self.rect.x -= 1
+        if "SPACE" in gameKeysPressed:
+            self.rect.y = self.rect.y - 1.5
+            #self.rect.x -= 1
+            
             if pygame.sprite.spritecollideany(self, allPlatforms):
                 self.rect.x = self.rect.x + 1
         self.rect.y = self.rect.y + 1
